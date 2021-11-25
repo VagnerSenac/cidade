@@ -8,12 +8,13 @@
     <title>Cidades - Londres</title>
     <link rel="shortcut icon" href="icone.png" type="image/x-icon">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
 
         #cabecalho {
             height: 200px;
             background-color: #C4C4C4;
-
+            border: 1px solid black;
         }
 
         #menu-de-navegacao {
@@ -24,7 +25,6 @@
         }
 
         #Conteudo-principal {
-            height: 608px;
             background-color: #DEDCDC;
 
         }
@@ -50,10 +50,33 @@
             font-weight: 600;
             color: #C51616;
         }
+
+        .subtitulo {
+            font-size: 40;
+            color: #7800A1;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .texto-comum {
+            font-size: 14px;
+            font-weight: 300;
+            font-family: 'Open Sans', sans-serif;
+            text-align: justify;
+        }
+        .texto-colunas{
+            column-count:2;
+        }
+        .creditos{
+            font-family:'Poppins', sans-serif;
+            font-size: 16;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
+  
     <header id="cabecalho">
         <h1 id="titulo">Cidades</h1>
     </header>
@@ -62,8 +85,41 @@
         <a href="paris.html" class="item-menu">PARIS</a> -
         <a href="tokyo.html" class="item-menu">TOKYO</a>
     </nav>
-    <main id="Conteudo-principal"></main>
-    <footer id="rodape"></footer>
+    <main id="Conteudo-principal">
+        <h2 class="subtitulo">LONDRES</h2>
+        <video autoplay width="560" controls>
+            <source src="videos/video-londres.mp4" type="video/mp4">
+        </video>
+        <p class="texto-comum">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta fermentum mi, nec pharetra dolor
+            sollicitudin sed. Cras nisi erat, fermentum vel pulvinar quis, feugiat quis arcu. Vivamus ac mauris
+            sagittis, facilisis lacus mollis, pretium ligula. Integer consectetur ut libero at iaculis. Nam rutrum
+            iaculis varius. Sed nec mattis lectus. Ut non fringilla justo. Nullam eu maximus felis.
+        </p>
+        <p class="texto-comum">
+            Cras auctor, tortor et egestas maximus, ex orci mattis magna, feugiat tincidunt libero nisl non nisl.
+            Integer porta eros sed ex dictum, vel rhoncus odio convallis. Aliquam luctus magna in dolor congue, a auctor
+            mi bibendum. Sed semper a ligula cursus vestibulum. Etiam sodales nisl nec felis feugiat, a ultricies tortor
+            consequat. Vestibulum libero diam, laoreet sed lorem in, vestibulum tempor enim. Suspendisse neque sem,
+            tincidunt in consequat sit amet, mollis vel mauris. Nam venenatis dictum tellus, a pretium arcu rhoncus sed.
+            Duis non euismod ex. Suspendisse in nisl risus. Cras nec velit purus. Sed iaculis mauris sit amet leo
+            tristique, eget dapibus orci consectetur. Proin condimentum gravida lectus, vel convallis felis iaculis vel.
+            Proin ac arcu ac velit tempor molestie porta eu sem. Nullam a vestibulum enim, laoreet finibus quam.
+        </p>
+        <p class="texto-comum texto-colunas">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse
+            luctus a enim in luctus. Vestibulum vel viverra purus. Nam nunc turpis, posuere nec purus at, laoreet semper
+            ex. Duis auctor pellentesque leo, vitae faucibus purus rhoncus sed. Cras lacus lectus, gravida sed pharetra
+            sit amet, sollicitudin sit amet leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia curae; Curabitur tristique pretium imperdiet. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Fusce vel neque vel mauris ultricies porttitor tincidunt sed risus. Morbi lacus risus,
+            faucibus a elit id, tempus facilisis diam. Curabitur rhoncus neque mi. Nam ut ultrices mi.
+        </p>
+        <img src="londres.jpg" alt="Londres" width="800">
+    </main>
+    <footer id="rodape">
+        <p class="creditos">Desenvolvido por Vagner Lourenço. &reg; Todos os direitos reservados.2022</p>
+    </footer>
 </body>
 
 </html>
